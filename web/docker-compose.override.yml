@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  backend:
+    build: 
+      context: backend
+    restart: "no"
+    volumes:
+    - ./backend:/usr/src/app
+    - ../models:/usr/src/app/models
+  frontend:
+    build: 
+      context: frontend
+    ports:
+      - "8080:80"
+    restart: "no"
+    volumes:
+    - ./nginx-dev.conf:/etc/nginx/nginx.conf
+    

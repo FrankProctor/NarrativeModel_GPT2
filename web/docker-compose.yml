@@ -1,0 +1,15 @@
+version: '3'
+services:
+  backend:
+    image: gcr.io/frank-proctor/backend:latest
+    restart: always
+    volumes:
+    - ./models:/usr/src/app/models
+
+  frontend: 
+    image: gcr.io/frank-proctor/frontend:latest
+    ports:
+      - "80:80"
+    restart: always
+    depends_on:
+      - backend
