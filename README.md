@@ -1,4 +1,4 @@
-# Article Generation PoC for Frank-Proctor
+# Narrative Text Generation Using GPT-2
 
 For the explainating on GPT-2 Model and article generation, please read [here](https://oursky.quip.com/ta3HA42rjZIr/Article-Generation-and-GPT-2-Model)
 
